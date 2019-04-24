@@ -3,6 +3,7 @@ package com.nico;
 import org.springframework.cglib.proxy.Enhancer;
 
 public class AopUtil {
+	@SuppressWarnings("unchecked")
 	public static <T> T createProxyObject(Class<T> type) {
         AopProxy factory = new AopProxy();
         Enhancer enhancer = new Enhancer();

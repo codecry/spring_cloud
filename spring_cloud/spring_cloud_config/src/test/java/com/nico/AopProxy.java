@@ -7,6 +7,7 @@ import org.springframework.cglib.proxy.MethodProxy;
 
 public class AopProxy implements MethodInterceptor {
 
+	@SuppressWarnings("unused")
 	@Override
 	public Object intercept(Object source, Method method, Object[] params, MethodProxy methodProxy) throws Throwable {
 		StringBuilder sb=new StringBuilder();

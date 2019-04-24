@@ -35,7 +35,8 @@ public class MyLogAspect {
      * @param myLog
      * @return
      */
-    @Around(value = "pointcut() && @annotation(myLog)")
+    @SuppressWarnings({ "unused", "rawtypes" })
+	@Around(value = "pointcut() && @annotation(myLog)")
     public Object around(ProceedingJoinPoint point, MyLog myLog) {
         System.out.println("++++执行了around方法++++");
         try {

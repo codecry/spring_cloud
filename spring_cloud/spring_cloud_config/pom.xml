@@ -18,7 +18,7 @@
 		<dependency>
 			<groupId>org.eclipse.jgit</groupId>
 			<artifactId>org.eclipse.jgit</artifactId>
-			<version>4.10.0.201712302008-r</version>
+			<!--codecry <version>4.10.0.201712302008-r</version> -->
 		</dependency>
 		<!-- 图形化监控 -->
 		<dependency>
