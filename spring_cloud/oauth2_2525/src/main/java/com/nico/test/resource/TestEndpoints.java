@@ -9,7 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TestEndpoints {
 
-    @GetMapping("/product/{id}")
+    @SuppressWarnings("unused")
+	@GetMapping("/product/{id}")
     //商品查询接口
     public String getProduct(@PathVariable String id) {
         //for debug
@@ -17,7 +18,8 @@ public class TestEndpoints {
         return "product id : " + id;
     }
 
-    @GetMapping("/order/{id}")
+    @SuppressWarnings("unused")
+	@GetMapping("/order/{id}")
     //订单查询接口
     public String getOrder(@PathVariable String id) {
         //for debug
@@ -25,7 +27,8 @@ public class TestEndpoints {
         return "order id : " + id;
     }
     
-    @GetMapping("/test/{id}")
+    @SuppressWarnings("unused")
+	@GetMapping("/test/{id}")
     //订单查询接口
     public String test(@PathVariable String id) {
         //for debug
