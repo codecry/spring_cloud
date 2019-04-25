@@ -15,5 +15,6 @@ import com.nico.web.mybatis.entity.SysUser;
  * @since 2018-06-22
  */
 public interface SysUserMapper extends BaseMapper<SysUser> {
+	@SuppressWarnings("rawtypes")
 	List<Map> selectAll();
 }
