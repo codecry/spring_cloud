@@ -1,16 +1,16 @@
 package com.nico.config;
 
-import java.util.ArrayList;
 import java.util.Collection;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.AuthorityUtils;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import com.nico.web.mybatis.entity.SysUser;
 
 public class SysUserDetails extends SysUser implements UserDetails{
+
+	private static final long serialVersionUID = -338630044986667757L;
 
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {

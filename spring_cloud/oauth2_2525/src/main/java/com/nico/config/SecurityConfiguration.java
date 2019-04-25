@@ -48,6 +48,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	protected UserDetailsService userDetailsService() {
 		
 		return new UserDetailsService() {
+			@SuppressWarnings("unused")
 			@Override
 			public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 				SysUser sysUser=new SysUser();
