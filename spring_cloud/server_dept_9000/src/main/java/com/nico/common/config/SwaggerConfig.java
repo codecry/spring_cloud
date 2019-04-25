@@ -1,8 +1,5 @@
 package com.nico.common.config;
 
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-
 /**
  * <p>
  * swagger 整合管理API接口
