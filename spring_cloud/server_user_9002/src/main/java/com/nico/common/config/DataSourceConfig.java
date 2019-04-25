@@ -25,7 +25,8 @@ import com.alibaba.druid.support.http.WebStatFilter;
 @Configuration
 public class DataSourceConfig {
 
-    private static final Logger log = LoggerFactory.getLogger(DataSourceConfig.class);
+    @SuppressWarnings("unused")
+	private static final Logger log = LoggerFactory.getLogger(DataSourceConfig.class);
 
     @Value("${spring.datasource.url}")  
     private String dbUrl;  
